@@ -1,4 +1,4 @@
-git hub is very intersting..
+i have to  change this place in a new word!!!
 川贝为川贝母、暗紫贝母、甘肃贝母、梭砂贝母的干燥鳞茎。前三种按性状不同分别习称为
 “松贝”和“青贝”，后者习称“炉贝”。产于四川、西藏、青海、甘肃等地。
 松贝的最大形态特征就是“怀中抱月”。
