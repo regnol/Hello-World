@@ -36,5 +36,15 @@
 	<servlet-name>HelloWorld</servlet-name>
 	<url-pattern>/hellow</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>sbr</servlet-name>
+	<servlet-class>Hello</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>sbr</servlet-name>
+	<url-pattern>/s</url-pattern>
+  </servlet-mapping>
 
 </web-app>

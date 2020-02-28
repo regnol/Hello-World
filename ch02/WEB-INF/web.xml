@@ -19,43 +19,42 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0" metadata-complete="true">
 
-  <!-- servlet -->
+  <!-- welcome1 -->
   <servlet>
-    <servlet-name>HelloWorldServlet</servlet-name>
-    <servlet-class>src.wzl.demo.WelcomServlet</servlet-class>
+    <servlet-name>HttpWelcomeServlet</servlet-name>
+    <servlet-class>com.wzl.yanyan.HttpWelcomeServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>HelloWorldServlet</servlet-name>
-    <url-pattern>/hello</url-pattern>
+    <servlet-name>HttpWelcomeServlet</servlet-name>
+    <url-pattern>/ff</url-pattern>
+  </servlet-mapping>
+  
+  <!-- welcome2 -->
+  <servlet>
+    <servlet-name>no</servlet-name>
+    <servlet-class>com.wzl.yanyan.demo.WelcomServlet</servlet-class>
+    <!-- <init-param> -->
+      <!-- <param-name>greeting</param-name> -->
+      <!-- <param-value>这是welcome</param-value> -->
+    <!-- </init-param> -->
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>no</servlet-name>
+    <url-pattern>/dd</url-pattern>
   </servlet-mapping>
 
   <!-- hello -->
   <servlet>
-    <servlet-name>HelloWorldServlet_m</servlet-name>
-    <servlet-class>HelloWorldServlet</servlet-class>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <servlet-class>com.wzl.yanyan.HelloWorldServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>HelloWorldServlet_m</servlet-name>
-    <url-pattern>/world</url-pattern>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <url-pattern>/demo/hello</url-pattern>
   </servlet-mapping>
-
-  <!-- welcome -->
-  <servlet>
-    <servlet-name>Welcome</servlet-name>
-    <servlet-class>WelcomeServlet</servlet-class>
-    <init-param>
-      <param-name>greeting</param-name>
-      <param-value>这是welcome</param-value>
-    </init-param>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>Welcome</servlet-name>
-    <url-pattern>/welcome</url-pattern>
-  </servlet-mapping>
-
 
   <!-- output -->
 

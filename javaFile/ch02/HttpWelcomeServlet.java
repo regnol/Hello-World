@@ -1,3 +1,4 @@
+package com.wzl.yanyan;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * WelcomeServlet
  */
-public class WelcomeServlet extends HttpServlet{
+public class HttpWelcomeServlet extends HttpServlet{
 
     /**
      *
@@ -57,7 +58,7 @@ public class WelcomeServlet extends HttpServlet{
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
 
-        out.println("<htm><head><title>sss</title></head><body>"+welcomeInfo+"</body></html>");
+        out.println("<htm><head><title>sss</title></head><body>"+welcomeInfo+"<h1>这是使用Http 继承实现的Servlet</h1></body></html>");
         // doGet(req,resp);
     }
 }

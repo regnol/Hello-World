@@ -1,4 +1,4 @@
-package src.wzl.demo;
+package com.wzl.yanyan.demo;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -28,8 +28,9 @@ public class WelcomServlet implements Servlet {
     }
 
     public void service(ServletRequest req,ServletResponse res) throws ServletException,IOException {
+		res.setContentType("text/html;charset=utf-8");
         PrintWriter out = res.getWriter();
-        out.print("hellow world_今天打老虎");
+        out.print("hellow world_今天打老虎 这是使用Servlet接口实现的Servlet 实例");
         out.close();
     }
 }

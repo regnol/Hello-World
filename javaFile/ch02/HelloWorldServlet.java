@@ -1,4 +1,4 @@
-
+package com.wzl.yanyan;
 import java.io.IOException;
 import java.io.PrintWriter;
 
