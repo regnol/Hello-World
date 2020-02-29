@@ -46,5 +46,47 @@
 	<servlet-name>sbr</servlet-name>
 	<url-pattern>/s</url-pattern>
   </servlet-mapping>
+  
+  
+  <!--中文欢迎  -->
+  <servlet>
+	<servlet-name>ZH</servlet-name>
+	<servlet-class>org.wzl.yanyan.WelcomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>ZH</servlet-name>
+	<url-pattern>/welcome/zh</url-pattern>
+	<init-param>
+		<param-name>hellow</param-name>
+		<param-value>欢迎你</param-value>
+	</init-param>
+  </servlet-mapping>
+  
+  <!-- 英文欢迎 -->
+  <servlet>
+	<servlet-name>EN</servlet-name>
+	<servlet-class>org.wzl.yanyan.WelcomeServlet</servlet-class>
+	<init-param>
+		<param-name>hellow</param-name>
+		<param-value>welcome</param-value>
+	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+	<servlet-name>EN</servlet-name>
+	<url-pattern>/welcome/en</url-pattern>
+  </servlet-mapping>
+  
+  <mime-mapping>
+        <extension>htm</extension>
+        <mime-type>text/html;charset=UTF-8</mime-type>
+   </mime-mapping>
+   
+   <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html;charset=UTF-8</mime-type>
+   </mime-mapping>
+
 
 </web-app>
